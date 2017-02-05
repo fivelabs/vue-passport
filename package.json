@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "webpack --config example/webpack.config.js -w -d",
     "build": "babel src -d dist",
-    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json"
+    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
